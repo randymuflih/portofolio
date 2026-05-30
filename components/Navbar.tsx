@@ -29,12 +29,12 @@ export default function Navbar() {
         <a href="#" className="text-sm font-semibold text-[#0A0A0A] tracking-tight">
           {portfolio.name.split(' ').slice(1).join(' ')}
         </a>
-        <ul className="flex items-center gap-7">
+        <ul className="flex items-center gap-4 md:gap-7">
           {navLinks.map((link) => (
             <li key={link.href}>
               <a
                 href={link.href}
-                className="text-sm text-[#6B6B6B] hover:text-[#0A0A0A] transition-colors duration-150"
+                className="text-xs md:text-sm text-[#6B6B6B] hover:text-[#0A0A0A] transition-colors duration-150"
               >
                 {link.label}
               </a>

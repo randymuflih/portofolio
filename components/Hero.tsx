@@ -21,7 +21,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="text-[clamp(1.8rem,4.5vw,4rem)] font-black leading-[1.05] tracking-tight text-[#0A0A0A] whitespace-nowrap"
+          className="text-[clamp(1.8rem,4.5vw,4rem)] font-black leading-[1.05] tracking-tight text-[#0A0A0A] sm:whitespace-nowrap"
         >
           {portfolio.name}
         </motion.h1>
@@ -63,32 +63,14 @@ export default function Hero() {
         transition={{ duration: 0.7, delay: 0.5 }}
         className="w-full max-w-sm mx-auto px-6"
       >
-        <div
-          className="w-full aspect-[3/4] rounded-2xl overflow-hidden flex flex-col items-center justify-end pb-10 relative"
-          style={{
-            background: 'linear-gradient(160deg, #E8E0D4 0%, #C4B499 45%, #7A6A52 100%)',
-          }}
-        >
-          {/* Grain overlay */}
-          <div
-            className="absolute inset-0 opacity-20"
-            style={{
-              backgroundImage:
-                'url("data:image/svg+xml,%3Csvg viewBox=\'0 0 256 256\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'noise\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.9\' numOctaves=\'4\' stitchTiles=\'stitch\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23noise)\' opacity=\'1\'/%3E%3C/svg%3E")',
-              backgroundSize: '150px',
-            }}
+        <div className="w-full aspect-[3/4] rounded-2xl overflow-hidden relative">
+          <img
+            src="/photo-randy.jpeg"
+            alt={portfolio.name}
+            className="w-full h-full object-cover object-top"
           />
-          {/* Silhouette initials */}
-          <div className="absolute inset-0 flex items-center justify-center">
-            <span
-              className="text-[9rem] font-black leading-none select-none"
-              style={{ color: 'rgba(255,255,255,0.15)' }}
-            >
-              {portfolio.name.split(' ').map((n) => n[0]).join('')}
-            </span>
-          </div>
           {/* Name tag */}
-          <div className="relative z-10 bg-white/80 backdrop-blur-sm rounded-xl px-5 py-3 text-center">
+          <div className="absolute bottom-6 left-1/2 -translate-x-1/2 bg-white/80 backdrop-blur-sm rounded-xl px-5 py-3 text-center w-max">
             <p className="text-xs text-[#6B6B6B] uppercase tracking-widest">Informatics Student</p>
             <p className="text-sm font-semibold text-[#0A0A0A] mt-0.5">{portfolio.name}</p>
           </div>

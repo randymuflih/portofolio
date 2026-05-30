@@ -122,8 +122,8 @@ export default function Highlights() {
             {/* Task cards — full width, 2 baris */}
             <div className="flex flex-col gap-3">
               {exp.tasks.map((task, i) => (
-                <div key={i} className="rounded-xl overflow-hidden border border-[#E8E8E8] bg-white flex flex-row">
-                  <div className="shrink-0 w-56 h-36 overflow-hidden">
+                <div key={i} className="rounded-xl overflow-hidden border border-[#E8E8E8] bg-white flex flex-col sm:flex-row">
+                  <div className="shrink-0 w-full h-44 sm:w-56 sm:h-36 overflow-hidden">
                     <img
                       src={i === 0 ? '/pelindo-web.png' : '/pelindo-network.jpeg'}
                       alt={task.title}
