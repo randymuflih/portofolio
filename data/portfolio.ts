@@ -125,7 +125,7 @@ const portfolio: PortfolioData = {
       client: 'Tugas Kuliah',
       year: '2025',
       screenshot: '/project-magang.png',
-      liveUrl: 'https://project-pbo-git-main-randymuflih-7048s-projects.vercel.app/',
+      liveUrl: 'https://portofolio-randymuflih.vercel.app/',
       githubUrl: 'https://github.com/randymuflih/project-PBO',
     },
     {
@@ -147,7 +147,7 @@ const portfolio: PortfolioData = {
       client: 'IYREF ITB',
       year: '2026',
       screenshot: '/project-waste2worth.png',
-      liveUrl: 'https://waste-to-worth-msm7t1xrr-randymuflih-7048s-projects.vercel.app/',
+      liveUrl: 'https://waste-to-worth-eosin.vercel.app/',
       githubUrl: 'https://github.com/randymuflih/waste-to-worth',
     },
     {
