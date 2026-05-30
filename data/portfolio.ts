@@ -125,7 +125,7 @@ const portfolio: PortfolioData = {
       client: 'Tugas Kuliah',
       year: '2025',
       screenshot: '/project-magang.png',
-      liveUrl: 'https://portofolio-randymuflih.vercel.app/',
+      liveUrl: 'https://project-pbo.vercel.app/',
       githubUrl: 'https://github.com/randymuflih/project-PBO',
     },
     {
